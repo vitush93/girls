@@ -1,0 +1,352 @@
+body {
+    background: #e5e5e5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#header {
+    background: #4caf50;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #333;
+}
+
+#logo {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+}
+
+#logo a {
+    color: #fff;
+}
+
+#hamburger-button {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 40px;
+    color: #fff;
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+}
+
+#search {
+    position: relative;
+}
+
+#search-textbox {
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+#search-textbox + i {
+    position: absolute;
+    font-size: 24px;
+    color: #999;
+    top: 16px;
+    right: 20px;
+}
+
+.date-title {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.record {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.record span {
+    display: block;
+}
+
+.record a.record-container {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display: block;
+    color: #333;
+    margin-right: 45px;
+}
+
+.record span.record-title {
+    font-size: 30px;
+}
+
+.record span.record-value {
+    font-size: 48px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: #777;
+}
+
+.record .record-menu-button {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+}
+
+#add-button {
+    z-index: 3;
+    position: fixed;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 100px;
+    display: block;
+    background: #e91e63;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 64px;
+    font-size: 20px;
+}
+
+body.modal {
+    overflow: hidden;
+}
+
+#fade {
+    display: none;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    height: 100%;
+    left: 0;
+    line-height: 20px;
+    opacity: 0.5;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition-delay: 0s;
+    transition-duration: 0.15s;
+    transition-property: opacity;
+    transition-timing-function: linear;
+    width: 100%;
+    z-index: 1040;
+}
+
+#modal-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    left: 0;
+    line-height: 20px;
+    opacity: 1;
+    outline: rgb(51, 51, 51) none 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+    right: 0;
+    top: 0;
+    transition-delay: 0s;
+    transition-duration: 0.15s;
+    transition-property: opacity;
+    transition-timing-function: linear;
+    z-index: 1050;
+}
+
+#modal-dialog {
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+    padding: 30px 20px 80px;
+    position: relative;
+}
+
+#modal-dialog h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#modal-dialog label {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#modal-dialog input[type=submit] {
+    margin-top: 20px;
+    position: absolute;
+    right: 20px;
+}
+
+.girl-select {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #4caf50;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.active.girl-select {
+    opacity: 1;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+label.input {
+    font-size: 16px;
+    color: #666;
+}
+
+input[type=text].input, input[type=password].input, input[type=email].input {
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #999;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 15px;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+input[type=text].input:focus, input[type=password].input:focus, input[type=email].input:focus {
+    background: #fff;
+    border-bottom: 2px solid #4caf50;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+input[type=submit].input, button.input, a.input {
+    display: inline-block;
+    font-size: 14px;
+    color: #4caf50;
+    font-weight: 500;
+    border: none;
+    background: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 2px;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+input[type=submit].input:hover, button.input:hover, a.input:hover {
+    background: #e5e5e5;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+#detail {
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+#detail .record-title {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#detail table {
+    border: none;
+    width: 100%;
+}
+
+#detail table tr {
+    background: none;
+    border-bottom: 1px solid #ccc;
+}
+
+#detail table th {
+    color: #777;
+    font-weight: 400;
+}
+
+#detail th .checkbox {
+    border-color: #777;
+}
+
+#detail th .checkbox.checked {
+    background: #777;
+}
+
+#detail a.input {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+div.checkbox {
+    margin: auto;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #333;
+}
+
+div.checkbox.checked {
+    background: #333;
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Crossfit Girls",
+    "dependencies": {
+        "handlebars": "*",
+        "underscore": "*",
+        "backbone": "*",
+        "foundation": "*"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "frontend-less",
+    "description": "Frontend development toolkit",
+    "author": "Vit Habada",
+    "private": true,
+    "browser": {
+        "backbone": "./bower_components/backbone/backbone.js",
+        "underscore": "./bower_components/underscore/underscore.js"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.0",
+        "matchdep": "*",
+        "time-grunt": "~1.0.0",
+        "grunt-contrib-watch": "~0.6.1",
+        "grunt-browserify": "~3.8.0",
+        "grunt-contrib-handlebars": "*",
+        "jquery": "*"
+    }
+}
