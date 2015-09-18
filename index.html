@@ -23,9 +23,7 @@
     <div class="card" id="modal-dialog">
         <h3>New record</h3>
         <label class="input">Girl</label>
-        <span class="girl-select active">Cindy</span>
-        <span class="girl-select">Elizabeth</span>
-        <span class="girl-select">Fran</span>
+        <div id="js-girls"></div>
 
         <label for="record" class="input">Record</label>
         <input type="text" name="record" id="record" class="input">
@@ -57,51 +55,12 @@
 <section role="main" id="main">
     <div class="row">
         <div class="large-12 columns">
-            <div class="row">
-
-
-                <div class="large-12 columns date-title">Today</div>
-
-                <div class="large-6 medium-6 small-12 columns">
-                    <div class="card record">
-                        <a href="" class="record-container">
-                            <span class="record-title">Fran</span>
-                            <span class="record-value">5:25</span>
-                        </a>
-
-                        <i class="fa fa-ellipsis-v record-menu-button"></i>
-                    </div>
-                </div>
-
-                <div class="large-6 medium-6 small-12 columns">
-                    <div class="card record">
-                        <a href=""  class="record-container">
-                            <span class="record-title">Cindy</span>
-                            <span class="record-value">8 rounds</span>
-                        </a>
-
-                        <i class="fa fa-ellipsis-v record-menu-button"></i>
-                    </div>
-                </div>
-
-                <div class="large-12 columns date-title">August 23, 2015</div>
-
-                <div class="large-6 medium-6 small-12 end columns">
-                    <div class="card record">
-                        <a href="" class="record-container">
-                            <span class="record-title">Fran</span>
-                            <span class="record-value">5:27</span>
-                        </a>
-                        <i class="fa fa-ellipsis-v record-menu-button"></i>
-                    </div>
-                </div>
-
-
-            </div>
+            <div class="row" id="js-records"></div>
         </div>
     </div>
 </section>
 <!-- end CONTENT -->
 
+<script src="js/bundle.js"></script>
 </body>
 </html>

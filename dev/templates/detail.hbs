@@ -1,0 +1,31 @@
+<div class="large-12 columns">
+
+    <div class="card record" id="detail">
+
+        <a href="" class="input">delete</a>
+        <a href="" class="input">edit</a>
+
+
+        <span class="record-title">{{girl}}</span>
+
+        <table>
+
+            <tr>
+                <th><div class="checkbox"></div></th>
+                <th>Date</th>
+                <th>Record</th>
+            </tr>
+
+
+            {{#each records}}
+            <tr>
+                <td><div class="checkbox"></div></td>
+                <td>{{date}}</td>
+                <td>{{record}}</td>
+            </tr>
+            {{/each}}
+        </table>
+
+    </div>
+
+</div>

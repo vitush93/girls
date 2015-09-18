@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 
         watch: {
             js: {
-                files: ['dev/js/*.js'],
+                files: ['dev/js/**/*.js'],
                 tasks: ['browserify']
             },
             handlebars: {

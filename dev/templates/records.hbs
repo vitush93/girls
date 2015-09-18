@@ -1,0 +1,22 @@
+{{#if empty}}
+
+    <div class="large-12 columns date-title">There are no records..</div>
+
+{{else}}
+
+    <div class="large-12 columns date-title">Today</div>
+
+    {{#each records}}
+    <div class="large-6 medium-6 small-12 columns">
+        <div class="card record">
+            <a href="/records/{{girl}}" class="record-container js-navigation">
+                <span class="record-title">{{girl}}</span>
+                <span class="record-value">{{record}}</span>
+            </a>
+
+            <i class="fa fa-ellipsis-v record-menu-button"></i>
+        </div>
+    </div>
+    {{/each}}
+
+{{/if}}
